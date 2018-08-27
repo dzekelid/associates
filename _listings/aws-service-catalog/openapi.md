@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: AWS Service Catalog
 x-complete: 1
@@ -68,4 +67,3 @@ paths:
           description: OK
       tags:
       - Portfolios
----

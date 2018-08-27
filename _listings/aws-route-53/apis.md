@@ -25,11 +25,32 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "8"
 x-alexaRank: "0"
 tags: Associates
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/associates/master/_listings/aws-route-53/apis.md
 specificationVersion: "0.14"
-apis: []
+apis:
+- name: AWS Route 53 API - Associate V P C With Hosted Zone
+  x-api-slug: 20130401hostedzoneidassociatevpc-post
+  description: Associates an Amazon VPC with a private hosted zone. ImportantTo perform
+    the association, the VPC and the private hosted zone must already exist. You can't
+    convert a public hosted zone into a private hosted zone.Send a POST request to
+    the /2013-04-01/hostedzone/hosted zone ID/associatevpc resource. The request body
+    must include a document with an AssociateVPCWithHostedZoneRequest element. The
+    response contains a ChangeInfo data type that you can use to track the progress
+    of the request. NoteIf you want to associate a VPC that was created by using one
+    AWS account with a private hosted zone that was created by using a different account,
+    the AWS account that created the private hosted zone must first submit a CreateVPCAssociationAuthorization
+    request. Then the account that created the VPC must submit an AssociateVPCWithHostedZone
+    request.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: :///
+  tags: Amazon Web Services, DNS, API Service Provider, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/associates/master/_listings/aws-route-53/20130401hostedzoneidassociatevpc-post-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://aws.rekognition.api.gallery.streamdata.io

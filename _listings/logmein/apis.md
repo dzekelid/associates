@@ -8,11 +8,28 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28873-www-
 x-kinRank: "7"
 x-alexaRank: "7271"
 tags: Associates
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/associates/master/_listings/logmein/apis.md
 specificationVersion: "0.14"
-apis: []
+apis:
+- name: GoToAssist Remote Support - Associate Ticket
+  x-api-slug: put
+  description: "Associates a ticket for a particular partner with a current session.\n\n
+    \ Request Parameters:                  \n                    \n    field      data
+    type      description    \n    sessionId      string      The unique ID of the
+    session to associate with the new partner object.    \n    userToken      string
+    \     The token identifying and authenticating the user in the partner system
+    that this object is being created on behalf of this user.    \n    partnerObject
+    \     string      The partner object to associate with the session."
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28873-www-logmeininc-com.jpg
+  humanURL: http://www.LogMeInInc.com
+  baseURL: https://api.getgo.com//G2A/rest/v1
+  tags: SaaS, Technology, Enterprise, Voice, Videoconferencing, Audio, Webinars, Relative
+    Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/associates/master/_listings/logmein/put-openapi.md
 x-common:
 - type: x-github
   url: https://github.com/logmein
